@@ -18,11 +18,11 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <ul class="text-center mx-auto">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Resume</li>
-                    <li>Contact</li>
+                    <li><router-link class="router-link" :to="{name: 'Home'}">Home</router-link></li>
+                    <li><router-link class="router-link" :to="{name: 'About'}">About</router-link></li>
+                    <li><router-link class="router-link" :to="{name: 'Projects'}">Projects</router-link></li>
+                    <li><router-link class="router-link" :to="{name: 'Resume'}">Resume</router-link></li>
+                    <li><router-link class="router-link" :to="{name: 'Contact'}">Contact</router-link></li>
                 </ul>
             </div>
         </div>
@@ -69,5 +69,14 @@ export default {
     margin-top: 10px;
     padding: 20px;
     font-size: 3vh;
+    text-decoration: none;
+}
+.router-link {
+    color: #03034b;
+    text-decoration: none;
+}
+.router-link:hover {
+    color: #03034b;
+    text-decoration: none;
 }
 </style>
